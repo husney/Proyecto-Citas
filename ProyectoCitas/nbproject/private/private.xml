@@ -5,7 +5,16 @@
         <group>
             <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/vista/PrincipalJFrame.java</file>
             <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/vista/RegistroTratamientos.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/controlador/ControladorConsultaPaciente.java</file>
             <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/vista/Index.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/controlador/ControladorConsultaTratamientos.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/controlador/ControladorConsultaConsultorios.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/controlador/ControladorConsultaCitas.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/vista/ConsultarTratamientos.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/controlador/ControladorConsultaMedico.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/controlador/ControladorRegistroTratamiento.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/modelo/Tratamiento.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/modelo/GestorTratamiento.java</file>
         </group>
     </open-files>
 </project-private>
