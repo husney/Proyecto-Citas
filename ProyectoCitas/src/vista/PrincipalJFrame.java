@@ -19,7 +19,7 @@ public class PrincipalJFrame extends javax.swing.JFrame {
     ConsultarConsultorios consultorios;
     RegistroCita regCita;
     ConsultarCitas consultasCitas;
-    
+    RegistroTratamientos regTratamiento;
     
     public PrincipalJFrame() {
         initComponents();
@@ -51,7 +51,10 @@ public class PrincipalJFrame extends javax.swing.JFrame {
         jMenu5 = new javax.swing.JMenu();
         jMenuItem8 = new javax.swing.JMenuItem();
         jMenuItem9 = new javax.swing.JMenuItem();
+        jMenu6 = new javax.swing.JMenu();
+        jMenuItem10 = new javax.swing.JMenuItem();
 
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("GESTIÓN DE CITAS");
 
         jMenu1.setText("Archivo");
@@ -141,6 +144,18 @@ public class PrincipalJFrame extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu5);
 
+        jMenu6.setText("Tratamientos");
+
+        jMenuItem10.setText("Registrar Tratamiento");
+        jMenuItem10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem10ActionPerformed(evt);
+            }
+        });
+        jMenu6.add(jMenuItem10);
+
+        jMenuBar1.add(jMenu6);
+
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -207,6 +222,12 @@ public class PrincipalJFrame extends javax.swing.JFrame {
         consultasCitas.setVisible(true);
     }//GEN-LAST:event_jMenuItem9ActionPerformed
 
+    private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
+       regTratamiento = new RegistroTratamientos();
+       regTratamiento.setLocationRelativeTo(null);
+       regTratamiento.setVisible(true);
+    }//GEN-LAST:event_jMenuItem10ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -248,8 +269,10 @@ public class PrincipalJFrame extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem10;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
