@@ -1,8 +1,13 @@
 package modelo;
 import java.sql.*;
 import javax.swing.JOptionPane;
-import javax.swing.JTable;
+import javax.swing.WindowConstants;
 import javax.swing.table.DefaultTableModel;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.JasperReport;
+import net.sf.jasperreports.engine.util.JRLoader;
+import net.sf.jasperreports.view.JasperViewer;
 import recursos.Conexion;
 
 public class gestorPaciente {
@@ -89,5 +94,30 @@ public class gestorPaciente {
         } catch (Exception e) {
         }
         return modelo;
+    }
+    
+    public void generarReporte(){
+        c = null;
+        
+        
+        JasperReport report = null;
+        String path = "src/reportes/ReportesPacientes.jasper";
+        
+        try {
+            c = con.getConexion();
+            report = (JasperReport) JRLoader.loadObjectFromFile(path);
+            JasperPrint jprint = JasperFillManager.fillReport(path,null,c);
+            
+            JasperViewer vista = new JasperViewer(jprint,false);
+            
+            vista.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+            vista.setVisible(true);
+            
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        
+        
+        
     }
 }

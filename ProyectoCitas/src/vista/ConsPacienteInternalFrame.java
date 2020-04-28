@@ -38,6 +38,7 @@ public class ConsPacienteInternalFrame extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         tabla = new javax.swing.JTable();
         btnCerrar = new javax.swing.JButton();
+        btnReporte = new javax.swing.JButton();
 
         buttonGroup1.add(rdbIdentificacion);
         rdbIdentificacion.setText("Identificación");
@@ -73,6 +74,8 @@ public class ConsPacienteInternalFrame extends javax.swing.JFrame {
             }
         });
 
+        btnReporte.setText("Generar Reporte");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -96,6 +99,8 @@ public class ConsPacienteInternalFrame extends javax.swing.JFrame {
             .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 491, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnReporte)
+                .addGap(119, 119, 119)
                 .addComponent(btnCerrar)
                 .addContainerGap())
         );
@@ -115,7 +120,9 @@ public class ConsPacienteInternalFrame extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnCerrar)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnCerrar)
+                    .addComponent(btnReporte))
                 .addContainerGap())
         );
 
@@ -164,6 +171,7 @@ public class ConsPacienteInternalFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnBuscar;
     public javax.swing.JButton btnCerrar;
+    public javax.swing.JButton btnReporte;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JRadioButton rdbApellido;

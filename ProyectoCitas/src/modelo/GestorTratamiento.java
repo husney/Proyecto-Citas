@@ -1,7 +1,13 @@
 package modelo;
 import java.sql.*;
 import javax.swing.JOptionPane;
+import javax.swing.WindowConstants;
 import javax.swing.table.DefaultTableModel;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.JasperReport;
+import net.sf.jasperreports.engine.util.JRLoader;
+import net.sf.jasperreports.view.JasperViewer;
 
 public class GestorTratamiento {
     
@@ -46,7 +52,7 @@ public class GestorTratamiento {
         ResultSetMetaData rsMd;
         
         String where = "";
-        if(!parametro.isEmpty()){
+        if(!parametro.isEmpty() && !valor.isEmpty()){
             where = "WHERE "+parametro+ " = '"+valor+"'";
         }
         
@@ -66,7 +72,7 @@ public class GestorTratamiento {
             rs = ps.executeQuery();
             rsMd = rs.getMetaData();
             
-            String titulos[] = {"Numero", "Fecha Asignado", "Fecha Inicio", "Fecha Fin", "Paciente", "Descripcion", "Observaciones"};
+            String titulos[] = {"Numero", "Fecha Asignado6", "Fecha Inicio", "Fecha Fin", "Paciente", "Descripcion", "Observaciones"};
             modelo.setColumnIdentifiers(titulos);
            
             
@@ -85,5 +91,24 @@ public class GestorTratamiento {
         return modelo;
     }
     
-   
+    public void generarReporte(){
+        c = null;
+        
+        JasperReport report = null;
+        String path = "src/reportes/ReportesTratamientos.jasper";
+        
+        try {
+            c = con.getConexion();
+            report = (JasperReport) JRLoader.loadObjectFromFile(path);
+            JasperPrint print = JasperFillManager.fillReport(path, null, c);
+            JasperViewer vista = new JasperViewer(print, false);
+            
+            vista.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+            vista.setVisible(true);
+            
+        } catch (Exception e) {
+        }
+    }
+    
+    
 }

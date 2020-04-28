@@ -40,6 +40,7 @@ public class ConsultarCitas extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         tabla = new javax.swing.JTable();
         btnCerrar = new javax.swing.JButton();
+        btnReportes = new javax.swing.JButton();
 
         buttonGroup1.add(rdbFecha);
         rdbFecha.setText("Fecha");
@@ -83,6 +84,13 @@ public class ConsultarCitas extends javax.swing.JFrame {
             }
         });
 
+        btnReportes.setText("Generar Reporte");
+        btnReportes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReportesActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -110,6 +118,8 @@ public class ConsultarCitas extends javax.swing.JFrame {
             .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnReportes)
+                .addGap(421, 421, 421)
                 .addComponent(btnCerrar)
                 .addContainerGap())
         );
@@ -131,8 +141,12 @@ public class ConsultarCitas extends javax.swing.JFrame {
                     .addComponent(btnBuscar))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
                 .addComponent(btnCerrar))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnReportes)
+                .addContainerGap())
         );
 
         pack();
@@ -145,6 +159,10 @@ public class ConsultarCitas extends javax.swing.JFrame {
     private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
         setVisible(false);
     }//GEN-LAST:event_btnCerrarActionPerformed
+
+    private void btnReportesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnReportesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -185,6 +203,7 @@ public class ConsultarCitas extends javax.swing.JFrame {
     public javax.swing.JButton btnBuscar;
     public javax.swing.JButton btnBuscarFecha;
     public javax.swing.JButton btnCerrar;
+    public javax.swing.JButton btnReportes;
     private javax.swing.ButtonGroup buttonGroup1;
     public com.toedter.calendar.JDateChooser chooserFecha;
     private javax.swing.JScrollPane jScrollPane1;

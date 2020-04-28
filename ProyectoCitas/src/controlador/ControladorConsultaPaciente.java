@@ -8,16 +8,15 @@ public class ControladorConsultaPaciente implements ActionListener{
     
    
     private modelo.gestorPaciente gestorPaciente;
-    private modelo.Paciente paciente;
     private vista.ConsPacienteInternalFrame consultaPacienteVista;
     
     public ControladorConsultaPaciente(vista.ConsPacienteInternalFrame vista){
      gestorPaciente = new modelo.gestorPaciente();
-     paciente = new modelo.Paciente();
      this.consultaPacienteVista = vista;
      
      this.consultaPacienteVista.btnBuscar.addActionListener(this);
      this.consultaPacienteVista.btnCerrar.addActionListener(this);
+     this.consultaPacienteVista.btnReporte.addActionListener(this);
      buscar();
     }
 
@@ -25,6 +24,8 @@ public class ControladorConsultaPaciente implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == this.consultaPacienteVista.btnBuscar){
             buscar();
+        } else if(e.getSource() == this.consultaPacienteVista.btnReporte){
+            reporte();
         }
     }
     
@@ -51,6 +52,10 @@ public class ControladorConsultaPaciente implements ActionListener{
             this.consultaPacienteVista.tabla.getColumnModel().getColumn(i).setPreferredWidth(anchos[i]);
         }
       
+    }
+    
+    public void reporte(){
+        gestorPaciente.generarReporte();
     }
     
     

@@ -26,6 +26,7 @@ public class ConsultarMedicos extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         rdbIdentificacion = new javax.swing.JRadioButton();
         rdbNombre = new javax.swing.JRadioButton();
         rdbApellido = new javax.swing.JRadioButton();
@@ -34,11 +35,15 @@ public class ConsultarMedicos extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         tabla = new javax.swing.JTable();
         btnCerrar = new javax.swing.JButton();
+        btnReporte = new javax.swing.JButton();
 
+        buttonGroup1.add(rdbIdentificacion);
         rdbIdentificacion.setText("Identificación");
 
+        buttonGroup1.add(rdbNombre);
         rdbNombre.setText("Nombres");
 
+        buttonGroup1.add(rdbApellido);
         rdbApellido.setText("Apellidos");
 
         btnBuscar.setText("Buscar");
@@ -63,6 +68,13 @@ public class ConsultarMedicos extends javax.swing.JFrame {
             }
         });
 
+        btnReporte.setText("Generar Reporte");
+        btnReporte.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReporteActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -84,6 +96,8 @@ public class ConsultarMedicos extends javax.swing.JFrame {
             .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 545, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnReporte)
+                .addGap(143, 143, 143)
                 .addComponent(btnCerrar)
                 .addContainerGap())
         );
@@ -100,9 +114,11 @@ public class ConsultarMedicos extends javax.swing.JFrame {
                     .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnBuscar))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
-                .addComponent(btnCerrar)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 470, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnCerrar)
+                    .addComponent(btnReporte))
                 .addContainerGap())
         );
 
@@ -112,6 +128,10 @@ public class ConsultarMedicos extends javax.swing.JFrame {
     private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
         setVisible(false);
     }//GEN-LAST:event_btnCerrarActionPerformed
+
+    private void btnReporteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReporteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnReporteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -151,6 +171,8 @@ public class ConsultarMedicos extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnBuscar;
     public javax.swing.JButton btnCerrar;
+    public javax.swing.JButton btnReporte;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JRadioButton rdbApellido;
     public javax.swing.JRadioButton rdbIdentificacion;

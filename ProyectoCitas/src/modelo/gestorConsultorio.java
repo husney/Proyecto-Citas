@@ -1,8 +1,15 @@
 package modelo;
+import java.awt.Window;
 import java.sql.*;
 import java.util.Vector;
 import javax.swing.JOptionPane;
+import javax.swing.WindowConstants;
 import javax.swing.table.DefaultTableModel;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.JasperReport;
+import net.sf.jasperreports.engine.util.JRLoader;
+import net.sf.jasperreports.view.JasperViewer;
 
 public class gestorConsultorio {
     
@@ -37,7 +44,7 @@ public class gestorConsultorio {
         
         String where = "";
         
-        if(!parametro.isEmpty()){
+        if(!parametro.isEmpty() && !valor.isEmpty()){
             where = "WHERE "+parametro+ " = '"+valor+"'";
         }
         
@@ -110,5 +117,24 @@ public class gestorConsultorio {
         } catch (Exception e) {
         }
         return consultorios;
+    }
+    
+    public void generarReporte(){
+        c = null;
+        
+        JasperReport report = null;
+        String path = "src/reportes/ReportesConsultorios.jasper";
+        
+        try {
+            c = con.getConexion();
+            report = (JasperReport) JRLoader.loadObjectFromFile(path);
+            JasperPrint print = JasperFillManager.fillReport(path, null, c);
+            JasperViewer vista = new JasperViewer(print, false);
+            
+            vista.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+            vista.setVisible(true);
+            
+        } catch (Exception e) {
+        }
     }
 }

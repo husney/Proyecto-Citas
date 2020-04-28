@@ -17,6 +17,7 @@ public class ControladorConsultaTratamientos implements ActionListener{
         
         this.consultaTratamientos.btnBuscarFecha.addActionListener(this);
         this.consultaTratamientos.btnBuscarTxt.addActionListener(this);
+        this.consultaTratamientos.btnReporte.addActionListener(this);
         buscar();
         
     }
@@ -27,6 +28,8 @@ public class ControladorConsultaTratamientos implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == this.consultaTratamientos.btnBuscarFecha || e.getSource() == this.consultaTratamientos.btnBuscarTxt){
             buscar();
+        } else if(e.getSource() == this.consultaTratamientos.btnReporte){
+            reporte();
         }
     }
     
@@ -70,6 +73,10 @@ public class ControladorConsultaTratamientos implements ActionListener{
         this.consultaTratamientos.rdbPaciente.setText(null);
         this.consultaTratamientos.txtBusqueda.setText(null);
         
+    }
+    
+    public void reporte(){
+        gestorTratamiento.generarReporte();
     }
     
 }
