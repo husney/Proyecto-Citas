@@ -30,6 +30,8 @@ public class ControladorRegistroCita implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == this.registroCita.btnGuardar){
             registrar();
+        }else if(e.getSource() == this.registroCita.btnNuevo){
+            limpiar();
         }
        
     }
@@ -73,6 +75,18 @@ public class ControladorRegistroCita implements ActionListener{
         modelo.gestorConsultorio consultorios = new modelo.gestorConsultorio();
         DefaultComboBoxModel modelo = new DefaultComboBoxModel(consultorios.llenarConsultorios());
         this.registroCita.cbxConsultorios.setModel(modelo);
+        
+    }
+    
+    public void limpiar(){
+        this.registroCita.fechaCita.setDate(null);
+        this.registroCita.horaCita.setSelectedIndex(0);
+        this.registroCita.minutosCita.setSelectedIndex(0);
+        this.registroCita.txtPaciente.setText(null);
+        this.registroCita.cbxMedicos.setSelectedIndex(0);
+        this.registroCita.cbxConsultorios.setSelectedIndex(0);
+        this.registroCita.txtEstado.setText(null);
+        this.registroCita.txtObservaciones.setText(null);
         
     }
 }

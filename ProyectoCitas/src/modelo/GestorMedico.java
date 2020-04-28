@@ -109,7 +109,7 @@ public class GestorMedico {
             med = new Medico();
             
             med.setNombres("Seleccione el medico");
-            med.setApellidos("Selec");
+            med.setApellidos("");
             med.setIdentificacion("0");
             medicos.add(med);
             

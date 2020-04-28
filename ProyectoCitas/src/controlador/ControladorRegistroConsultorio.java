@@ -24,6 +24,8 @@ public class ControladorRegistroConsultorio implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == this.registroConsultorio.btnGuardar){
             registrar();
+        } else if(e.getSource() == this.registroConsultorio.btnNuevo){
+            limpiar();
         }
     }
     
@@ -35,5 +37,9 @@ public class ControladorRegistroConsultorio implements ActionListener{
         
     }
     
+    public void limpiar(){
+        this.registroConsultorio.txtNombre.setText(null);
+        this.registroConsultorio.txtNumero.setText(null);
+    }
     
 }
