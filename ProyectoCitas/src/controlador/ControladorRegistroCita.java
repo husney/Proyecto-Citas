@@ -20,7 +20,7 @@ public class ControladorRegistroCita implements ActionListener{
         this.registroCita = vista;
         
         this.registroCita.btnGuardar.addActionListener(this);
-        this.registroCita.btnNuevo.addActionListener(this);;
+        this.registroCita.btnNuevo.addActionListener(this);
         this.registroCita.btnCerrar.addActionListener(this);
         llenarMedicos();
         llenarConsultorios();
@@ -52,14 +52,12 @@ public class ControladorRegistroCita implements ActionListener{
         String horaMin = this.registroCita.minutosCita.getSelectedItem().toString();
         String horaCita = hora+":"+horaMin;
         String identificacionMedico = idMedico;
-        System.out.println(identificacionMedico);
+        
         String identificacionPaciente = this.registroCita.txtPaciente.getText();
         int numeroConsultorio = consultorio;
         String estado = this.registroCita.txtEstado.getText();
         String observaciones = this.registroCita.txtObservaciones.getText();
-        System.out.println(identificacionMedico);
-        System.out.println(consultorio);
-        System.out.println(horaCita);
+        
         
         gestorCita.registrarCita(new modelo.Cita(fechaCita, horaCita, identificacionMedico, identificacionPaciente, numeroConsultorio, estado, observaciones));
     }

@@ -3,23 +3,38 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/modelo/gestorConsultorio.java</file>
             <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/vista/RegistroTratamientos.java</file>
-            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/controlador/ControladorConsultaPaciente.java</file>
             <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/controlador/ControladorConsultaCitas.java</file>
-            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/modelo/GestorMedico.java</file>
             <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/controlador/ControladorConsultaMedico.java</file>
-            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/controlador/ControladorRegistroTratamiento.java</file>
-            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/modelo/GestorCita.java</file>
-            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/modelo/GestorTratamiento.java</file>
-            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/modelo/gestorPaciente.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/vista/ConsPacienteInternalFrame.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/vista/RegistroCita.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/controlador/ControladorRegistroCita.java</file>
             <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/vista/ConsultarMedicos.java</file>
             <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/vista/PrincipalJFrame.java</file>
-            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/vista/Index.java</file>
             <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/controlador/ControladorConsultaTratamientos.java</file>
-            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/controlador/ControladorConsultaConsultorios.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/vista/Index.java</file>
             <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/vista/ConsultarTratamientos.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/controlador/ControladorRegistroConsultorio.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/recursos/Conexion.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/modelo/gestorConsultorio.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/modelo/Consultorio.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/controlador/ControladorConsultaPaciente.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/modelo/GestorMedico.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/vista/RegpacienteInternalFrame.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/controlador/ControladorRegistroTratamiento.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/vista/ConsultarCitas.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/modelo/GestorCita.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/modelo/Paciente.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/modelo/GestorTratamiento.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/modelo/gestorPaciente.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/vista/RegMedico.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/controlador/ControladorRegistroPaciente.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/modelo/Medico.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/controlador/ControladorRegistroMedico.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/controlador/ControladorConsultaConsultorios.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/vista/ConsultarConsultorios.java</file>
             <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/modelo/Tratamiento.java</file>
+            <file>file:/B:/SENA/Desarrollo%20de%20aplicaciones%20con%20Java%20y%20C%23/Centro%20Medico/ProyectoCitas/src/vista/RegConsultorio.java</file>
         </group>
     </open-files>
 </project-private>

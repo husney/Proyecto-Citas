@@ -9,18 +9,17 @@ import modelo.Paciente;
 public class ControladorRegistroPaciente implements ActionListener{
 
     
-    modelo.Paciente paciente;
+    
     modelo.gestorPaciente gestorPaciente;
     vista.RegpacienteInternalFrame registroPaciente;
     
     
     public ControladorRegistroPaciente(vista.RegpacienteInternalFrame vista){
-    paciente = new modelo.Paciente();
     gestorPaciente = new modelo.gestorPaciente();
     this.registroPaciente = vista;
     
-    vista.btnNuevo.addActionListener(this);
-    vista.btnRegistrar.addActionListener(this);
+    this.registroPaciente.btnNuevo.addActionListener(this);
+    this.registroPaciente.btnRegistrar.addActionListener(this);
     }
     
     

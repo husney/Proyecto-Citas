@@ -9,9 +9,9 @@ public class ControladorConsultaCitas implements ActionListener{
     
     modelo.GestorCita gestorCita;
     vista.ConsultarCitas consultarCitas;
-
+  
     public ControladorConsultaCitas(vista.ConsultarCitas vista){
-    
+        
         gestorCita = new modelo.GestorCita();
         this.consultarCitas = vista;
         
@@ -20,6 +20,8 @@ public class ControladorConsultaCitas implements ActionListener{
         this.consultarCitas.btnReportes.addActionListener(this);
         buscar();
     }
+    
+    
     
     @Override
     public void actionPerformed(ActionEvent e) {

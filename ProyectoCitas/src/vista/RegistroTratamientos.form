@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+  </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
     <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
@@ -42,11 +45,9 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="txtIdentificacionPaciente" min="-2" pref="224" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="chooserFechaAsignacion" pref="189" max="32767" attributes="0"/>
-                                  <Component id="chooserFechaInicio" max="32767" attributes="0"/>
-                                  <Component id="chooserFechaFinal" max="32767" attributes="0"/>
-                              </Group>
+                              <Component id="chooserFechaAsignacion" pref="321" max="32767" attributes="0"/>
+                              <Component id="chooserFechaInicio" max="32767" attributes="0"/>
+                              <Component id="chooserFechaFinal" max="32767" attributes="0"/>
                               <Component id="jScrollPane1" pref="321" max="32767" attributes="0"/>
                               <Component id="jScrollPane2" alignment="0" max="32767" attributes="0"/>
                           </Group>

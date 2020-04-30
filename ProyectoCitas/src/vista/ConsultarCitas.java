@@ -42,6 +42,8 @@ public class ConsultarCitas extends javax.swing.JFrame {
         btnCerrar = new javax.swing.JButton();
         btnReportes = new javax.swing.JButton();
 
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
         buttonGroup1.add(rdbFecha);
         rdbFecha.setText("Fecha");
 

@@ -39,6 +39,8 @@ public class RegMedico extends javax.swing.JFrame {
 
         jTextField1.setText("jTextField1");
 
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
         jLabel1.setText("Identificacion:");
 
         jLabel2.setText("Nombres:");

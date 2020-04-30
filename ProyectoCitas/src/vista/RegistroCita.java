@@ -51,6 +51,7 @@ public class RegistroCita extends javax.swing.JFrame {
         cbxConsultorios = new javax.swing.JComboBox<>();
         txtPaciente = new javax.swing.JTextField();
 
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("REGISTRO DE CITAS");
 
         jLabel1.setText("Fecha:");
@@ -91,6 +92,11 @@ public class RegistroCita extends javax.swing.JFrame {
         cbxMedicos.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 cbxMedicosItemStateChanged(evt);
+            }
+        });
+        cbxMedicos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbxMedicosActionPerformed(evt);
             }
         });
 
@@ -209,6 +215,10 @@ public class RegistroCita extends javax.swing.JFrame {
             rc.obtenerConsultorios(consultorio);
         }
     }//GEN-LAST:event_cbxConsultoriosItemStateChanged
+
+    private void cbxMedicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbxMedicosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbxMedicosActionPerformed
 
     
     public static void main(String args[]) {

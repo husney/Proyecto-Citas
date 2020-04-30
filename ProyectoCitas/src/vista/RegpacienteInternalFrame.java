@@ -42,6 +42,8 @@ public class RegpacienteInternalFrame extends javax.swing.JFrame {
         btnNuevo = new javax.swing.JButton();
         fechaNacimiento = new com.toedter.calendar.JDateChooser();
 
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
         jLabel1.setText("Identificación:");
 
         jLabel2.setText("Nombres:");

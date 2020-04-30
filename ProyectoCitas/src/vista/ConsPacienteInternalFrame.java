@@ -40,6 +40,8 @@ public class ConsPacienteInternalFrame extends javax.swing.JFrame {
         btnCerrar = new javax.swing.JButton();
         btnReporte = new javax.swing.JButton();
 
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
         buttonGroup1.add(rdbIdentificacion);
         rdbIdentificacion.setText("Identificación");
 

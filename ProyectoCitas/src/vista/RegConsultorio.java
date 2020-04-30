@@ -34,6 +34,8 @@ public class RegConsultorio extends javax.swing.JFrame {
         btnGuardar = new javax.swing.JButton();
         btnNuevo = new javax.swing.JButton();
 
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
         jLabel1.setText("Nombre:");
 
         jLabel2.setText("Numero:");

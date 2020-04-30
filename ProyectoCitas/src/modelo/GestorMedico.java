@@ -140,6 +140,7 @@ public class GestorMedico {
             report = (JasperReport) JRLoader.loadObjectFromFile(path);
             JasperPrint print = JasperFillManager.fillReport(path, null, c);
             JasperViewer vista = new JasperViewer(print, false);
+            
             vista.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
             vista.setVisible(true);
             

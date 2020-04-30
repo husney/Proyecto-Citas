@@ -47,6 +47,8 @@ public class ConsultarTratamientos extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         btnReporte = new javax.swing.JButton();
 
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
         jLabel1.setText("Buscar por fechas");
 
         buttonGroup1.add(rdbFechaAsignacion);
